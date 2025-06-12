@@ -251,8 +251,7 @@ public with sharing class FlowControlLoopsCollections {
         // Create a new list of integers and add numbers 1 to 5
         List<Integer> numberList = new List<Integer>{1, 2, 3, 4, 5}; //DO NOT CHANGE
 
-        numberList.remove(Integer.valueOf(3));// Remove the 3rd element (number 3) from the list
-        
+       numberList.remove(numberList.indexOf(3));// Remove the 3rd element (number 3) from the list
         // Return the updated list
         return numberList; // Replace null with the variable you used to store the result
     }
